@@ -1,9 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
+
 }
 
 body {
@@ -11,6 +10,7 @@ body {
     background: #eee;
     color: #333;
 }
+
 strong {
     color: #00cfef;
 }
@@ -19,41 +19,48 @@ a {
     color: #ddd;
     text-decoration: none;
 }
+
 p {
     color: white;
 }
+
 h1,
 h2,
 h3,
-h4{
+h4 {
     color: white;
 }
+
 ul {
     list-style: none;
 }
+
 /*header*/
 .header-elem {
     height: 100px;
-    padding: 1rem; 
+    padding: 1rem;
     background: #222;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul{
+header ul {
     list-style: none;
     display: flex;
     margin-left: 30px;
 }
+
 header ul li {
     text-align: center;
     margin-right: 40px;
     color: #00cfef;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     color: #00cfef;
 }
+
 .active {
     color: #00cfef;
 }
@@ -61,7 +68,7 @@ header ul li a:hover{
 
 /*container*/
 .container {
-    /* padding-top:900px; */ 
+    /* padding-top:900px; */
     display: flex;
     flex-direction: column;
     height: 800px;
@@ -71,15 +78,17 @@ header ul li a:hover{
 
     animation-name: container;
     animation-duration: 30s;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 
 }
+
 @keyframes container {
     0% {
         background: url(../images/route2.jpg) center center/cover;
 
     }
+
     10% {
         background: url(../images/ville.jpg) center center/cover;
     }
@@ -87,19 +96,22 @@ header ul li a:hover{
 
 .vp-container {
     /* flex: auto; */
-     max-width: 800px; 
+    max-width: 800px;
     text-align: center;
-    background:#222;
+    background: #222;
 }
-.container h1  {
+
+.container h1 {
     font-size: 80px;
     margin-bottom: 70px;
-    
+
 }
+
 .container p {
     font-size: 30px;
     margin-bottom: 60px;
 }
+
 .container-button {
     display: block;
     padding: 1rem 2rem;
@@ -110,24 +122,27 @@ header ul li a:hover{
     color: #00cfef;
     font-size: 1rem;
     cursor: pointer;
-   
-} 
+
+}
+
 .container-button:hover {
-    border: 1px solid  white;
+    border: 1px solid white;
     color: white;
     background: #00cfef;
     transition: all 0.5s ease-in-out;
 }
+
 .slide-container {
     max-width: 100vh;
     position: relative;
     margin: auto;
 
 }
-.prev{
+
+.prev {
     cursor: pointer;
-     position: absolute;
-     margin-left: 70px;
+    position: absolute;
+    margin-left: 70px;
     top: 50%;
     width: 60px;
     align-items: center;
@@ -135,16 +150,17 @@ header ul li a:hover{
     border-radius: 2px;
     color: #00cfef;
     font-size: 30px;
-   text-align: center; 
-   padding-block: 5px;
-   border: 1px solid #00cfef;
-  
-   
-    
+    text-align: center;
+    padding-block: 5px;
+    border: 1px solid #00cfef;
+
+
+
 }
 
-.next {   cursor: pointer;
-    position: absolute; 
+.next {
+    cursor: pointer;
+    position: absolute;
     right: 0;
     margin-right: 70px;
     top: 50%;
@@ -155,63 +171,70 @@ header ul li a:hover{
     border-radius: 2px;
     color: #00cfef;
     font-size: 30px;
-   padding-block: 5px;
-   border: 1px solid #00cfef;
+    padding-block: 5px;
+    border: 1px solid #00cfef;
 
 }
-.prev:hover{
+
+.prev:hover {
     border-radius: 5px;
     border: 1px solid white;
     color: white;
     background: #00cfef;
     transition: all 0.5s ease-in-out;
 }
-.next:hover{
+
+.next:hover {
     border-radius: 5px;
     border: 1px solid white;
     color: white;
     background: #00cfef;
     transition: all 0.5s ease-in-out;
-    
+
 }
 
 /*offer*/
 
 .nav {
-     background: #222; 
+    background: #222;
     height: 800px;
     width: 100%;
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
 }
+
 .offer {
     text-align: center;
 }
-.offer h2  {
+
+.offer h2 {
     text-align: center;
     font-size: 30px;
     padding-top: 80px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     /* background-color: #00cfef;
     font-weight: bold; */
-    
-    
+
+
 }
+
 .offer h3 {
     font-size: 30px;
     margin-bottom: 20px;
 }
 
- .offer-team {
-    padding: 10rem 1rem 10rem 1rem ;
+.offer-team {
+    padding: 10rem 1rem 10rem 1rem;
     text-align: center;
     display: block;
-} 
-.offer-list  {
+}
+
+.offer-list {
     text-align: center;
     display: flex;
     flex: row nowrap;
     justify-content: space-between;
 }
+
 .offer-list-elem b {
     color: white;
     font-size: 80px;
@@ -228,16 +251,18 @@ header ul li a:hover{
     position: relative;
     z-index: 2;
 }
+
 .anneau {
     display: block;
     position: absolute;
-        width: 215px;
+    width: 215px;
     height: 215px;
-    left:11.75% ;
+    left: 11.75%;
     margin-top: -292px;
-    border-radius:200px;
+    border-radius: 200px;
     border: solid #00cfef 5px;
 }
+
 .offer-list-elem b:hover {
     font-size: 100px;
 }
@@ -257,116 +282,119 @@ header ul li a:hover{
     padding-bottom: 5rem;
     background: url(../images/fleur.jpg);
 }
+
 .overplay-one {
     text-align: center;
     margin-top: 100px;
 }
-.overplay-one strong{
+
+.overplay-one strong {
     font-size: 40px;
     text-align: center;
     padding-bottom: 5rem;
 
 }
+
 .overplay-one p {
     color: #333;
     padding-bottom: 5rem;
     padding-top: 1rem;
     padding-right: 4rem;
 }
-.overplay1  ul{
+
+.overplay1 ul {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
 }
+
 .time {
     margin: 50px;
     margin-top: 10px;
 }
+
 .time p {
     font-size: 80px;
     font-weight: 80px;
     margin-top: 40px;
 }
+
 /*team*/
 .team {
     height: 800px;
     background: #333;
 }
+
 .team-titre {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 .team-titre h1 {
     font-size: 30px;
     margin-top: 100px;
     padding: 0 10px;
     background: #00cfef;
 }
+
 .team-titre h3 {
     font-size: 30px;
     margin-top: 20px;
 }
+
 .team-titre p {
     margin-top: 20px;
 
 }
-.team-list {
-    height: 100%;
-    width: 100%;
-    margin: 50px;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-}
-.team-img {
-    margin-top: 90px;
-}
-.team-img-one {
-    width: 15.8%;
-    margin: 10px;
-    border: 2px solid white;
-}
-.im:hover {
-    border: 2px solid #00cfef;
-}
-.team-img-one img {
-    height: 300px;
-    width: 300px;
-}
-.team-img-one img:hover {
-    height: 320px;
-    width: 320px;
-}
-.team-img-one li h4 {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row ;
-    justify-content: center;
-   
-}
-.team-img-one li p{
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
-}
-.team-img-one li i {
-    color:#00cfef;
-    font-size: 20px;
-    cursor: pointer;
-    /* margin-bottom: 30px; */
-    border: 5px;
-    border: 2px solid white;
-    background: white;
 
+.team-social {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
 }
-.team-img-one li a {
-    color: #00cfef;
-    margin-bottom: 30px;
-    border: 2px solid white;
-    background: white;
+
+.team-social>div {
+    height: 80%;
+    width: 20%;
+    border: solid 2px white;
+    transition: all 0.2s ease-in-out;
+}
+
+.team-social>div:hover {
+    border: solid 2px #00cfef;
+    transition: all 0.2s ease-in-out;
+}
+
+.team-social>div>img {
+    height: 80%;
+    width: 100%;
+}
+
+.text {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+
+.module {
+    height: 355px;
+    width: 303px;
+    background-color: #00cfef67;
+    position: absolute;
+    display: none;
+}
+
+.team-social>div:hover .module {
+    display: block;
+    transition: all 0.2s ease-in-out;
 }
